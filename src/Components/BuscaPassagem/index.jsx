@@ -20,6 +20,7 @@ const BuscaPassagem = () => {
         <Row style={{ width: "100%" }}>
           <Col style={{ width: "100%" }}>
             <Form
+            colon= 'false'
               name="basic"
               layout="inline"
               labelCol={{ span: 8 }}
