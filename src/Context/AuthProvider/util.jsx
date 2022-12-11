@@ -1,4 +1,4 @@
-import { Api } from "../../services/api";
+import { Api } from "../../Services/api";
 
 export function setUserLocalStorage(user){
     localStorage.setItem('u', JSON.stringify(user) )     //'u' is user
