@@ -24,6 +24,7 @@ const items = [
   },
 ];
 
+
 const NavBar = () => {
   return (
     <Header style={{ width: "100vw", height: "100%" }}>
