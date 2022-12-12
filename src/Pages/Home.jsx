@@ -1,4 +1,4 @@
-import AcordionHome from "../Components/acordionHome";
+import AcordionHome from "../Components/AcordionHome";
 import BuscaPassagem from "../Components/BuscaPassagem";
 import FavoritosHome from "../Components/FavoritosHome";
 import Footer from "../Components/Footer";
