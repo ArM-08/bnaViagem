@@ -5,6 +5,7 @@ const BuscaPassagem = () => {
     <div>
       <Row
         style={{
+            textAlign: "center",
           width: "70%",
           backgroundColor: "#FFF",
           height: "auto",
@@ -12,39 +13,46 @@ const BuscaPassagem = () => {
           left: "15%",
           top: "-75px",
           minHeight: "120px",
+          minWidth: "200px",
           boxShadow: '4px 4px 4px 4px rgba(0, 0, 0, 0.1)'
         }}
       >
-        <h2 style={{marginLeft: "20px", marginTop: "20px" }}>
+        <h2 style={{marginLeft: "28px", marginTop: "20px" }}>
           Passagens
         </h2>
         <Row style={{ width: "100%" }}>
-          <Col style={{ width: "100%" }}>
+         
             <Form
-           
               name="basic"
               layout="inline"
-              labelCol={{ span: 8 }}
+              labelCol={{ span: 12 }}
               wrapperCol={{ span: 20 }}
-              style={{ justifyContent: "space-between", margin: "20px" }}
+              style={{ justifyContent: "space-around", margin: "20px",  display: "flex", width: '100%' }}
               // onFinish = {onFinish}
             >
+                 <Col>
               <Form.Item
-              
-                label={<h4>Saida</h4>}
+                 style={{width: "100%"}}
+                label={<h4 >Saida</h4>}
                 colon= {false}
                 name="saida"
               >
                 <Input style={{ width: "auto" }} />
               </Form.Item>
+              </Col>
+              <Col>
               <Form.Item
+              style={{width: "100%"}}
               colon= {false}
                 label={<h4>Destino</h4>}
                 name="destino"
               >
                 <Input style={{ width: "auto" }} />
               </Form.Item>
+              </Col>
+              <Col>
               <Form.Item
+            style={{width: "100%"}}
               colon= {false}
                 wrapperCol={{ span: 20 }}
                 label={<h4>Data Ida</h4>}
@@ -52,7 +60,10 @@ const BuscaPassagem = () => {
               >
                 <DatePicker />
               </Form.Item>
+              </Col>
+              <Col>
               <Form.Item
+              style={{width: "100%"}}
               colon= {false}
                 wrapperCol={{ span: 20 }}
                 label={<h4>Data Volta</h4>}
@@ -60,21 +71,28 @@ const BuscaPassagem = () => {
               >
                 <DatePicker />
               </Form.Item>
+              </Col>
+              <Col
+              style={{
+                alignSelf: "end"}}
+              >
               <Form.Item
+              
               colon= {false}
                 style={{
                   width: "auto",
-                  alignSelf: "flex-end",
                   marginTop: "20px",
                 }}
-                wrapperCol={{ offset: 5, span: 14 }}
+              
               >
-                <Button type="primary" htmlType="submit">
+                <Button 
+                type="primary" htmlType="submit">
                   Submit
                 </Button>
               </Form.Item>
+              </Col>
             </Form>
-          </Col>
+         
         </Row>
       </Row>
     </div>

@@ -38,7 +38,9 @@ async function onFinish(values) {
 
     return(
         <div>
-            <Button type="primary" onClick={showModal}>
+            <Button
+            style={{marginRight: '20px'}}
+             type="primary" onClick={showModal}>
         Login
       </Button>
       <Modal title="Login" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}
