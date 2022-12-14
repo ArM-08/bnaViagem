@@ -1,11 +1,11 @@
-import { Button, Col, Form, Input, Row, DatePicker } from "antd";
+import { Button, Col, Form, Input, Row, DatePicker, Space } from "antd";
 
 const BuscaPassagem = () => {
   return (
     <div>
       <Row
         style={{
-            textAlign: "center",
+          textAlign: "center",
           width: "70%",
           backgroundColor: "#FFF",
           height: "auto",
@@ -13,86 +13,59 @@ const BuscaPassagem = () => {
           left: "15%",
           top: "-75px",
           minHeight: "120px",
-          minWidth: "200px",
-          boxShadow: '4px 4px 4px 4px rgba(0, 0, 0, 0.1)'
+          minWidth: "220px",
+          boxShadow: "4px 4px 4px 4px rgba(0, 0, 0, 0.1)",
         }}
       >
-        <h2 style={{marginLeft: "28px", marginTop: "20px" }}>
-          Passagens
-        </h2>
-        <Row style={{ width: "100%" }}>
-         
-            <Form
-              name="basic"
-              layout="inline"
-              labelCol={{ span: 12 }}
-              wrapperCol={{ span: 20 }}
-              style={{ justifyContent: "space-around", margin: "20px",  display: "flex", width: '100%' }}
-              // onFinish = {onFinish}
-            >
-                 <Col>
-              <Form.Item
-                 style={{width: "100%"}}
-                label={<h4 >Saida</h4>}
-                colon= {false}
-                name="saida"
-              >
-                <Input style={{ width: "auto" }} />
-              </Form.Item>
-              </Col>
-              <Col>
-              <Form.Item
-              style={{width: "100%"}}
-              colon= {false}
-                label={<h4>Destino</h4>}
-                name="destino"
-              >
-                <Input style={{ width: "auto" }} />
-              </Form.Item>
-              </Col>
-              <Col>
-              <Form.Item
-            style={{width: "100%"}}
-              colon= {false}
-                wrapperCol={{ span: 20 }}
-                label={<h4>Data Ida</h4>}
-                name="dsaida"
-              >
-                <DatePicker />
-              </Form.Item>
-              </Col>
-              <Col>
-              <Form.Item
-              style={{width: "100%"}}
-              colon= {false}
-                wrapperCol={{ span: 20 }}
-                label={<h4>Data Volta</h4>}
-                name="date-picker"
-              >
-                <DatePicker />
-              </Form.Item>
-              </Col>
-              <Col
-              style={{
-                alignSelf: "end"}}
-              >
-              <Form.Item
-              
-              colon= {false}
-                style={{
-                  width: "auto",
-                  marginTop: "20px",
-                }}
-              
-              >
-                <Button 
-                type="primary" htmlType="submit">
-                  Submit
+        <h2 style={{ marginLeft: "28px", marginTop: "20px" }}>Passagens</h2>
+        <Row style={{ width: "100%", }}>
+        <Form
+            name="basic"
+            style={{
+              margin: "20px",
+              width: "100%",
+            }}
+            // onFinish = {onFinish}
+          >
+           
+           <Space.Compact block 
+  style={{display: "flex", flexWrap:"wrap", justifyContent:"center"}}
+          >
+      <Input
+        style={{
+          width: '30%',height:"40px", minWidth:"150px", marginTop: "10px",
+        }}
+        placeholder="&#x1F50E; Saida"
+      />
+      <Input
+        style={{
+          width: '30%', height:"40px", minWidth:"150px", marginTop: "10px"
+        }}
+        placeholder="&#x1F50E; Destino"
+      />
+       <DatePicker.RangePicker
+        placeholder={["Ida", "Volta"]}
+       align="center"
+        style={{
+          width: '25%', height:"40px", borderTopRightRadius:"5px", borderBottomRightRadius:"5px", minWidth:"150px", marginTop: "10px"
+        }}
+      />
+      
+                <Button type="primary" htmlType="submit" style={{marginLeft: "10px", borderRadius:"10px", width:"90px",  alignSelf:"center", marginTop: "10px"}}>
+                  Pesquisar
                 </Button>
-              </Form.Item>
-              </Col>
-            </Form>
-         
+              
+       </Space.Compact>
+
+    
+    
+       <Space.Compact block>
+     
+    </Space.Compact>
+
+              
+            
+          </Form>
         </Row>
       </Row>
     </div>

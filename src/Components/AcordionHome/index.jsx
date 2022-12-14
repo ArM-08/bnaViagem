@@ -8,7 +8,7 @@ const AcordionHome= () => {
       align="middle"
         style={{
           width: "70%",
-          backgroundColor: "#006400",
+          backgroundColor: "rgb(79, 3, 194)",
          height:"auto",
           minHeight: "120px",
           minWidth: "200px",

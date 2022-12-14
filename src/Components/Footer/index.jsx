@@ -1,4 +1,5 @@
-import { Col, Row, Image} from "antd";
+import { Col, Row, Image } from "antd";
+import "./index.css";
 import {
   YoutubeFilled,
   TwitterCircleFilled,
@@ -18,25 +19,26 @@ const Footer = () => {
         }}
       >
         <Row
-        wrap={true}
+          wrap={true}
           style={{
             textAlign: "center",
             width: "70%",
             margin: "0 auto",
             display: "flex",
-            
           }}
         >
-          <Col  xs={24} sm={16} md={12}
+          <Col
+            xs={24}
+            sm={12}
+            md={12}
             style={{
               textAlign: "start",
-              width: "50%",
               display: "flex",
               alignItems: "center",
             }}
           >
             <Image
-            preview={false}
+              preview={false}
               style={{
                 width: "40px",
                 height: "40px",
@@ -46,13 +48,14 @@ const Footer = () => {
               src={Logo}
             ></Image>
             <h4 style={{ margin: "10px", textAlign: "center" }}>
-              {" "}
-              Bruh Viagem ©2022{" "}
+              
+              Bruh Viagem ©2022
             </h4>
           </Col>
           <Col
-        
-    xs={24} sm={16} md={12}
+            xs={24}
+            sm={12}
+            md={12}
             style={{
               textAlign: "end",
               display: "flex",
@@ -65,33 +68,31 @@ const Footer = () => {
               Redes Sociais
             </h6>
             <a
-              style={{ fontSize: "30px", color: "#000" }}
+              style={{ fontSize: "30px"}}
               href="https://www.linkedin.com/in/alan-moraes08/"
             >
               <YoutubeFilled />
             </a>
             <a
-              style={{ fontSize: "25px", color: "#000" }}
+              style={{ fontSize: "25px"}}
               href="https://www.linkedin.com/in/alan-moraes08/"
             >
               <TwitterCircleFilled />
             </a>
             <a
-              style={{ fontSize: "25px", color: "#000" }}
+              style={{ fontSize: "25px"}}
               href="https://www.linkedin.com/in/alan-moraes08/"
             >
-       
               <InstagramFilled />
             </a>
             <a
-              style={{ fontSize: "25px", color: "#000" }}
+              style={{ fontSize: "25px"}}
               href="https://www.linkedin.com/in/alan-moraes08/"
             >
-       
               <LinkedinFilled />
             </a>
             <a
-              style={{ fontSize: "25px", color: "#000", marginRight: "20px" }}
+              style={{ fontSize: "25px", marginRight: "20px" }}
               href="https://www.linkedin.com/in/alan-moraes08/"
             >
               <FacebookFilled />
@@ -104,144 +105,65 @@ const Footer = () => {
           textAlign: "center",
           width: "70%",
           display: "flex",
-          
           margin: "0 auto",
-      
         }}
       >
         <Col
+          xs={6}
+          sm={6}
+          md={9}
           style={{
-            width: "20%",
             display: "flex",
-            flexWrap: "wrap",
-            margin: "10px",
-            textAlign:"start"
+            flexDirection: "column",
+            marginTop: "10px",
+            textAlign: "start",
           }}
         >
-          <h3
-            style={{
-              width: "100%",
-              
-            }}
-          >
-            Conheça
-          </h3>
-          <a
-            style={{
-              width: "100%", color:"#000"
-              
-            }}
-            href=""
-          >
-            Quem Somos
-          </a>
-          <a
-            style={{
-              width: "100%", color:"#000"
-            }}
-            href=""
-          >
-            Trabalhe Conosco
-          </a>
-          <a
-            style={{
-              width: "100%", color:"#000"
-            }}
-            href=""
-          >
-            Portal do Parceiro
-          </a>
-          <a
-            style={{
-              width: "100%", color:"#000"
-            }}
-            href=""
-          >
-            Câmbio
-          </a> 
-          <a
-            style={{
-              width: "100%", color:"#000"
-            }}
-            href=""
-          >
-            Sustentabilidade
-          </a>
-          <a
-            style={{
-              width: "100%", color:"#000"
-            }}
-            href=""
-          >
-            Blog
-          </a>
-          <a
-            style={{
-              width: "100%", color:"#000"
-            }}
-            href=""
-          >
-            Transparencia
-          </a>
-          <a
-            style={{
-              width: "100%", color:"#000"
-            }}
-            href=""
-          >
-            Seguro Viagem
-          </a>
+          <h3>Conheça</h3>
+          <a href="">Quem Somos</a>
+          <a href="">Trabalhe Conosco</a>
+          <a href="">Portal do Parceiro</a>
+          <a href="">Câmbio</a>
+          <a href="">Sustentabilidade</a>
+          <a href="">Blog</a>
+          <a href="">Transparencia</a>
+          <a href="">Seguro Viagem</a>
         </Col>
         <Col
-        style={{
-          width: "20%",
-          display: "flex",
-          flexWrap: "wrap",
-          margin: "10px",
-          textAlign:"start"
-        }}>
-          <h3 style={{
-              width: "100%", color:"#000"}}>Viaje</h3>
-          <a style={{
-              width: "100%", color:"#000"
-              
-            }}
-            href="">Promoções</a>
-          <a style={{
-              width: "100%", color:"#000"
-              
-            }} href="">Pacotes</a>
-          <a style={{
-              width: "100%", color:"#000"
-              
-            }} href="">Internacional</a>
-          <a style={{
-              width: "100%", color:"#000"
-              
-            }} href="">Nacionais</a>
+          push={1}
+          xs={6}
+          sm={6}
+          md={9}
+          style={{
+            color: "#000",
+            display: "flex",
+            flexDirection: "column",
+            marginTop: "10px",
+            textAlign: "start",
+          }}
+        >
+          <h3>Viaje</h3>
+          <a href="">Promoções</a>
+          <a href="">Pacotes</a>
+          <a href="">Internacional</a>
+          <a href="">Nacionais</a>
         </Col>
         <Col
-        style={{
-          width: "20%",
-          display: "flex",
-          flexWrap: "wrap",
-          margin: "10px",
-          textAlign:"start",
-             
-        }}>
-          <h3 style={{
-              width: "100%", color:"#000"}}>Fale Conosco</h3>
-          <a style={{
-              width: "100%", color:"#000"
-              
-            }}
-            href="">Central de Ajuda</a>
-          <a style={{
-              width: "100%", color:"#000"
-              
-            }} href="">Política de privacidade</a>
-            </Col>
-        <Col></Col>
+          push={3}
+          xs={2}
+          sm={4}
+          md={4}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            marginTop: "10px",
+            textAlign: "start",
+          }}
+        >
+          <h3>Fale Conosco</h3>
+          <a href="">Central de Ajuda</a>
+          <a href="">Política de privacidade</a>
+        </Col>
       </Row>
     </div>
   );

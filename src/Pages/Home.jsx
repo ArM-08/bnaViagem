@@ -6,7 +6,7 @@ import HomeInternacional from "../Components/HomeInternacional";
 import HomeNacional from "../Components/HomeNacional";
 import NavBar from "../Components/NavBar";
 import PromoHome from "../Components/PromoHome";
-import ImgHeader from "./../assets/images/img_header_home.png";
+import ImgHeader from "./../assets/images/headers.png";
 const Home = () => {
   return (
     <div>
