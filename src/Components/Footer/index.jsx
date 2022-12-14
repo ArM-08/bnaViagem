@@ -1,4 +1,4 @@
-import { Col, Row } from "antd";
+import { Col, Row, Image} from "antd";
 import {
   YoutubeFilled,
   TwitterCircleFilled,
@@ -18,15 +18,16 @@ const Footer = () => {
         }}
       >
         <Row
+        wrap={true}
           style={{
             textAlign: "center",
             width: "70%",
             margin: "0 auto",
             display: "flex",
-            flexDirection: "Row",
+            
           }}
         >
-          <Col
+          <Col  xs={24} sm={16} md={12}
             style={{
               textAlign: "start",
               width: "50%",
@@ -34,7 +35,8 @@ const Footer = () => {
               alignItems: "center",
             }}
           >
-            <img
+            <Image
+            preview={false}
               style={{
                 width: "40px",
                 height: "40px",
@@ -42,30 +44,31 @@ const Footer = () => {
                 margin: "10px",
               }}
               src={Logo}
-            ></img>
+            ></Image>
             <h4 style={{ margin: "10px", textAlign: "center" }}>
               {" "}
               Bruh Viagem ©2022{" "}
             </h4>
           </Col>
           <Col
+        
+    xs={24} sm={16} md={12}
             style={{
               textAlign: "end",
-              width: "50%",
               display: "flex",
               alignItems: "center",
               justifyContent: "end",
-              gap: "20px",
+              gap: "2px",
             }}
           >
             <h6 style={{ fontSize: "18px", marginRight: "20px" }}>
-              Redes Sociais{" "}
+              Redes Sociais
             </h6>
             <a
               style={{ fontSize: "30px", color: "#000" }}
               href="https://www.linkedin.com/in/alan-moraes08/"
             >
-              <YoutubeFilled />{" "}
+              <YoutubeFilled />
             </a>
             <a
               style={{ fontSize: "25px", color: "#000" }}
@@ -91,7 +94,6 @@ const Footer = () => {
               style={{ fontSize: "25px", color: "#000", marginRight: "20px" }}
               href="https://www.linkedin.com/in/alan-moraes08/"
             >
-              {" "}
               <FacebookFilled />
             </a>
           </Col>
@@ -102,7 +104,7 @@ const Footer = () => {
           textAlign: "center",
           width: "70%",
           display: "flex",
-          flexDirection: "row",
+          
           margin: "0 auto",
       
         }}
