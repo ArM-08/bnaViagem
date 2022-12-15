@@ -1,11 +1,11 @@
-import { Button, Menu, Row } from "antd";
+import { Menu, Row } from "antd";
 import { Header } from "antd/es/layout/layout";
 import ModalLogin from "../ModalLogin";
 import Logo from "./../../assets/images/logo.png";
 
 const items = [
   {
-    label: <img src={Logo} style={{ width: "50px", height: "50px" }} />,
+    label: <a href="/"><img  src={Logo} style={{ width: "50px", height: "50px" }} /></a>,
   },
   {
     label: <a href="/">Home</a>,
