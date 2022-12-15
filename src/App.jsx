@@ -18,7 +18,7 @@ function App() {
             path="/profile"
             element={
               <ProtectedLayout>
-                <h2>Bem VIndo</h2>
+                <h2>Bem vindo</h2>
               </ProtectedLayout>
             }
           />
