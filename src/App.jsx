@@ -7,7 +7,7 @@ import { ProtectedLayout } from "./Components/ProtectedLayout";
 import Home from "./Pages/Home";
 import Destinos from "./Pages/Destinos";
 import Promocoes from "./Pages/Promocoes";
-import Contato from "./Pages/Contato";
+import Contato from "./Pages/Contato"
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
             }
           />
           <Route path="/" element={<Home />} />
-          <Route path="/destinos" element={<Destinos />} />
+          <Route path="/destinos" element={<Destinos/>} />
           <Route path="/promocoes" element={<Promocoes/>} />
           <Route path="/contato" element={<Contato/>} />
         </Routes>
