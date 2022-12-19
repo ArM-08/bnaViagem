@@ -8,6 +8,8 @@ import Home from "./Pages/Home";
 import Destinos from "./Pages/Destinos";
 import Promocoes from "./Pages/Promocoes";
 import Contato from "./Pages/Contato"
+import Cadastro from "./Pages/Cadastro";
+import DashBoard from "./Pages/Dashboard";
 
 function App() {
   return (
@@ -18,7 +20,7 @@ function App() {
             path="/profile"
             element={
               <ProtectedLayout>
-                <h2>Bem vindo</h2>
+                <DashBoard/>
               </ProtectedLayout>
             }
           />
@@ -26,6 +28,7 @@ function App() {
           <Route path="/destinos" element={<Destinos/>} />
           <Route path="/promocoes" element={<Promocoes/>} />
           <Route path="/contato" element={<Contato/>} />
+          <Route path="/cadastro" element={<Cadastro/>} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>

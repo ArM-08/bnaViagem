@@ -2,9 +2,10 @@ import { useState } from "react";
 import {Form, Modal, Button, Input} from "antd"
 const ModalForm = () => {
   const validateMessages = {
-    required: "${label} is required!",
+    required: "Preencha o campo ${label}",
+    
     types: {
-      email: "${label} is not a valid email!",
+      email: "Preencha o campo com ${label} válido ",
     },
   };
 
@@ -68,6 +69,7 @@ const ModalForm = () => {
             rules={[
               {
                 type: "email",
+                required: true,
               },
             ]}
           >

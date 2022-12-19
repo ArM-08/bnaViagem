@@ -70,9 +70,16 @@ async function onFinish(values) {
                 <Form.Item 
                 wrapperCol = {{offset: 8, span: 16}}>
                     <Button
+                    style={{margin:"1vh"}}
                     type='primary'
                     htmlType= 'submit'>
-                       Sign In
+                       Entrar
+                    </Button>
+                    <Button
+                    href='/cadastro'
+                    type='primary'
+                    >
+                       Cadastre-se
                     </Button>
                 </Form.Item>
             </Form>
