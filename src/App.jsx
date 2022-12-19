@@ -24,7 +24,7 @@ function App() {
               </ProtectedLayout>
             }
           />
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Contato />} />
           <Route path="/destinos" element={<Destinos/>} />
           <Route path="/promocoes" element={<Promocoes/>} />
           <Route path="/contato" element={<Contato/>} />
