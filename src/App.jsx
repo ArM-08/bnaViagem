@@ -10,6 +10,7 @@ import Promocoes from "./Pages/Promocoes";
 import Contato from "./Pages/Contato"
 import Cadastro from "./Pages/Cadastro";
 import DashBoard from "./Pages/Dashboard";
+import Login from "./Pages/Login";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/promocoes" element={<Promocoes/>}/>
           <Route path="/contato" element={<Contato/>}/>
           <Route path="/cadastro" element={<Cadastro/>}/>
+          <Route path="/login" element={<Login/>}/>
           <Route
             path="/profile"
             element={
