@@ -16,6 +16,11 @@ function App() {
     <AuthProvider>
       <BrowserRouter>
         <Routes>
+        <Route path="/" element={<Home/>} />
+          <Route path="/destinos" element={<Destinos/>}/>
+          <Route path="/promocoes" element={<Promocoes/>}/>
+          <Route path="/contato" element={<Contato/>}/>
+          <Route path="/cadastro" element={<Cadastro/>}/>
           <Route
             path="/profile"
             element={
@@ -24,11 +29,7 @@ function App() {
               </ProtectedLayout>
             }
           />
-          <Route path="/" element={<Home />} />
-          <Route path="/destinos" element={<Destinos/>} />
-          <Route path="/promocoes" element={<Promocoes/>} />
-          <Route path="/contato" element={<Contato/>} />
-          <Route path="/cadastro" element={<Cadastro/>} />
+          
         </Routes>
       </BrowserRouter>
     </AuthProvider>
