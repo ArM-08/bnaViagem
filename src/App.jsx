@@ -1,4 +1,3 @@
-
 import "antd/dist/reset.css";
 import { AuthProvider } from "./Context/AuthProvider";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -14,27 +13,26 @@ import Login from "./Pages/Login";
 
 function App() {
   return (
-    <AuthProvider>
+    
       <BrowserRouter>
         <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/destinos" element={<Destinos/>} />
-          <Route path="promocoes" element={<Promocoes/>}/>
-          <Route path="contato" element={<Contato/>}/>
-          <Route path="cadastro" element={<Cadastro/>}/>
-          <Route path="login" element={<Login/>}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/destinos" element={<Destinos />} />
+          <Route path="promocoes" element={<Promocoes />} />
+          <Route path="contato" element={<Contato />} />
+          <Route path="cadastro" element={<Cadastro />} />
+          <Route path="login" element={<Login />} />
           <Route
             path="/profile"
             element={
               <ProtectedLayout>
-                <DashBoard/>
+                <DashBoard />
               </ProtectedLayout>
             }
           />
-          
         </Routes>
       </BrowserRouter>
-    </AuthProvider>
+  
   );
 }
 
