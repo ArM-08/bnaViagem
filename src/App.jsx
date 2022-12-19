@@ -13,7 +13,7 @@ import Login from "./Pages/Login";
 
 function App() {
   return (
-    
+    <AuthProvider>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -32,7 +32,7 @@ function App() {
           />
         </Routes>
       </BrowserRouter>
-  
+    </AuthProvider>
   );
 }
 
