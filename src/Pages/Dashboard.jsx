@@ -7,6 +7,9 @@ import {ShoppingCartOutlined ,
     UserOutlined,} from "@ant-design/icons";
 import  Layout, { Content, Footer } from "antd/es/layout/layout";
 import Logo from './../assets/images/logo.png'
+import Principal from "../Components/Principal";
+import Conta from "../Components/Conta";
+import Carrinho from "../Components/Carrinho";
 
 
 const DashBoard = () => {
@@ -18,25 +21,43 @@ const DashBoard = () => {
           label,
         };
       }
+      
     const items = [
-        getItem('Principal', '1', <DesktopOutlined />),
-        getItem('Carrinho', '2', <ShoppingCartOutlined />),
-        getItem('Conta', '3', <UserOutlined />),
+        getItem('Principal', '1', <DesktopOutlined />, ),
+        getItem('Carrinho', '2', <ShoppingCartOutlined />,  ),
+        getItem('Conta', '3', <UserOutlined />, ),
         getItem( 'Logout' ,'4', <LogoutOutlined style={{color:"#FF0000"}}/>),
 
       ];
 
 const [collapsed, setCollapsed] = useState(false);
 
+const [selectedMenuItem, setSelectedMenuItem]= useState('1');
+const componentsSwtich = (key) => {
+  switch (key) {
+    case '1':
+      return (<Principal/>);
+    case '2':
+      return (<Carrinho/>);
+    case '3':
+      return (<Conta/>);
+      case '4':
+        return(<></>);
+    default:
+     
+      break;
+   }
+  };
 
 
     return (
+      
 <Layout
       style={{
         minHeight: '100vh',
       }}
     >
-<Sider collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
+<Sider collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)} breakpoint="sm" onBreakpoint={(value) => setCollapsed(value)}>
 <div
           style={{
             height: 40,
@@ -50,8 +71,10 @@ const [collapsed, setCollapsed] = useState(false);
         >
          <a href="/"> <Image preview={false} src={Logo} width="40px"  /></a>
         </div>
-         <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline" items={items} />
-         
+         <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline" items={items} onClick={(e) => 
+        setSelectedMenuItem(e.key)}/>
+                             
+     
       </Sider>
       <Layout className="site-layout">
        
@@ -75,7 +98,7 @@ const [collapsed, setCollapsed] = useState(false);
               background: "#FFF",
             }}
           >
-            CONTEUDO
+              {componentsSwtich(selectedMenuItem)}
           </div>
         </Content>
         <Footer
@@ -88,6 +111,7 @@ const [collapsed, setCollapsed] = useState(false);
       </Layout>
     
 </Layout>
+
     )
 }
 

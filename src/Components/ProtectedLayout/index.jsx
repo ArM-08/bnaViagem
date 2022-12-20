@@ -1,6 +1,6 @@
 import React from 'react';
 import { useAuth } from "../../Context/AuthProvider/useAuth"
-import { Navigate } from 'react-router-dom';
+
 
 export const ProtectedLayout = ({children}) => {
 
