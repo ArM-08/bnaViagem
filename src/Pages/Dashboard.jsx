@@ -1,4 +1,4 @@
-import { Breadcrumb,  Image, Menu } from "antd";
+import { Breadcrumb,  Image, Menu, Result } from "antd";
 import Sider from "antd/es/layout/Sider";
 import { useState } from "react";
 import {ShoppingCartOutlined ,
@@ -10,7 +10,7 @@ import Logo from './../assets/images/logo.png'
 import Principal from "../Components/Principal";
 import Conta from "../Components/Conta";
 import Carrinho from "../Components/Carrinho";
-
+import { useAuth } from "../Context/AuthProvider/useAuth";
 
 const DashBoard = () => {
     function getItem(label, key, icon, children) {
@@ -21,19 +21,22 @@ const DashBoard = () => {
           label,
         };
       }
-      
+   const auth = useAuth()
     const items = [
         getItem('Principal', '1', <DesktopOutlined />, ),
         getItem('Carrinho', '2', <ShoppingCartOutlined />,  ),
         getItem('Conta', '3', <UserOutlined />, ),
-        getItem( 'Logout' ,'4', <LogoutOutlined style={{color:"#FF0000"}}/>),
+        getItem( 'Logout' ,'4', <a onClick={auth.logout}> <LogoutOutlined style={{color:"#FF0000"}}/></a>),
 
       ];
 
 const [collapsed, setCollapsed] = useState(false);
 
 const [selectedMenuItem, setSelectedMenuItem]= useState('1');
+
 const componentsSwtich = (key) => {
+  
+  
   switch (key) {
     case '1':
       return (<Principal/>);
@@ -42,7 +45,7 @@ const componentsSwtich = (key) => {
     case '3':
       return (<Conta/>);
       case '4':
-        return(<></>);
+
     default:
      
       break;
@@ -83,14 +86,7 @@ const componentsSwtich = (key) => {
             margin: '0',
           }}
         >
-          <Breadcrumb
-            style={{
-              margin: '16px 0 5px 20px',
-            }}
-          >
-            <Breadcrumb.Item>Bem Vindo User</Breadcrumb.Item>
-  
-          </Breadcrumb>
+         
           <div
             style={{
               padding: 24,

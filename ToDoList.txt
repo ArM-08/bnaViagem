@@ -1,14 +1,14 @@
 
 
-[ ] Add Principal DashBoard
-[ ] Add Conta DashBoard
+[ x] Add Principal DashBoard
+[ x] Add Conta DashBoard
 [ ] Arrumar erro 404 Deploy
 [x] Arrumar Dashboard para exibir conteudos
 [ ] Add Carrinho system
-[ ] Add context Button on login 
-[ ] DashBoard Logout
+[ x] Add context Button on login 
+[x ] DashBoard Logout
 [ ] Add FakeJson
 [ ] Addd post Create Account
 [ ] Add Find Travel 
-[ ] Add function Logout in dashBoard
+[ x] Add function Logout
 [ ] ADD Jest
