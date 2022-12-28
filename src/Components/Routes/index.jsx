@@ -8,7 +8,7 @@ import Cadastro from "./../../Pages/Cadastro";
 import DashBoard from "./../../Pages/Dashboard";
 import Login from "./../../Pages/Login";
 
-const Rotas =()=>{
+const MainRoutes =()=>{
     return(
         <BrowserRouter>
           <Routes>
@@ -30,4 +30,4 @@ const Rotas =()=>{
         </BrowserRouter>
     )
 }
-export default Rotas;
+export default MainRoutes;

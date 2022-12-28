@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 
 import { CartContext } from "./Context/CartContext";
 import destino from "./Components/BdDestinos/destino.json";
-import Rotas from "./Components/Routes";
+import MainRoutes from "./Components/Routes";
 
 function App() {
   const [carrinho, setCarrinho] = useState([]);
@@ -118,7 +118,7 @@ function App() {
   return (
     <CartContext.Provider value={context} >
       <AuthProvider>
-        <Rotas/>
+        <MainRoutes/>
       </AuthProvider>
     </CartContext.Provider>
   );

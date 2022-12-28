@@ -37,8 +37,10 @@ const CardPassagem = ({ destino }) => {
         }
       />
       <Button
-        onClick={() => adicionaAoCarrinho(destino)}
-        style={{ marginBottom: "10px" }}
+        onClick={() => adicionaAoCarrinho(destino)} 
+        type="primary"
+        style={{ marginBottom: "10px", 
+        fontWeight: "bold" }}
       >
         Comprar
       </Button>
