@@ -2,7 +2,9 @@ import { useAuth } from './../../Context/AuthProvider/useAuth';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import { Button, Modal, Form, Input} from 'antd';
+import { Button, Modal, Form, Input, Avatar} from 'antd';
+
+import {UserOutlined} from "@ant-design/icons";
 
 const ModalLogin =() => {
 
@@ -37,12 +39,7 @@ async function onFinish(values) {
 
 
     return(
-        <div>
-            <Button
-            style={{marginRight: '20px'}}
-             type="primary" onClick={showModal}>
-        Login
-      </Button>
+        <div style={{display:"flex"}}><Button  style={{marginRight:"20px"}} onClick={showModal} type="primary"  icon={<UserOutlined />} >Entrar</Button>   
       <Modal title="Login" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}
       footer= {null}>
       <Form

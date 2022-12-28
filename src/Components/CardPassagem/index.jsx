@@ -1,27 +1,48 @@
-import { CalendarOutlined, CheckOutlined  } from "@ant-design/icons"
-import { Card} from "antd";
+import { CalendarOutlined, CheckOutlined } from "@ant-design/icons";
+import { Button, Card } from "antd";
+import { useContext } from "react";
+import { CartContext } from "../../Context/CartContext";
 
-const { Meta } = Card;
+const CardPassagem = ({ destino }) => {
+  const context = useContext(CartContext);
+  const { adicionaAoCarrinho } = context;
+  const { Meta } = Card;
 
-const CardPassagem = ({img, title, diaria, hospedagem, passagemaerea, valor, parcelas}) => {
-    return(
-        <Card
-        bordered={false}
-        hoverable="true"
-        cover = {<img alt="example" src={img} />}
-        style={{
-          width: 300,
-          height: '450px',}}
-          >
-<Meta title={title} description={<p><CalendarOutlined /> {diaria}<br/>
-<CheckOutlined/> {hospedagem}<br/>
-<CheckOutlined/> {passagemaerea}<br/>
-
-A partir de <br/>
-{valor}<br/>
-
-{parcelas}</p>} />
-          </Card>
-    )
-}
+  return (
+    <Card
+      key={destino.id}
+      bordered={false}
+      hoverable="true"
+      cover={<img alt="example" src={destino.imageUrl} />}
+      style={{
+        width: 300,
+        height: "470px",
+      }}
+    >
+      <Meta
+        title={destino.name}
+        description={
+          <p>
+            <CalendarOutlined /> {destino.diaria}
+            <br />
+            <CheckOutlined /> {destino.hospedagem}
+            <br />
+            <CheckOutlined /> {destino.passagemaerea}
+            <br />
+            A partir de <br />
+            R${destino.value}
+            <br />
+            {destino.parcelas}
+          </p>
+        }
+      />
+      <Button
+        onClick={() => adicionaAoCarrinho(destino)}
+        style={{ marginBottom: "10px" }}
+      >
+        Comprar
+      </Button>
+    </Card>
+  );
+};
 export default CardPassagem;
