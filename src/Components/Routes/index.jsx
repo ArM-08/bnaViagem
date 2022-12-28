@@ -13,7 +13,7 @@ const Rotas =()=>{
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/destinos" element={<Destinos />} />
+            <Route path="bruh-viagem.vercel.app/destinos" element={<Destinos />} />
             <Route path="/promocoes" element={<Promocoes />} />
             <Route path="/contato" element={<Contato />} />
             <Route path="/cadastro" element={<Cadastro />} />
