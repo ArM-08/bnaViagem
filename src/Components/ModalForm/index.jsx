@@ -1,9 +1,9 @@
 import { useState } from "react";
-import {Form, Modal, Button, Input} from "antd"
+import { Form, Modal, Button, Input } from "antd";
 const ModalForm = () => {
   const validateMessages = {
     required: "Preencha o campo ${label}",
-    
+
     types: {
       email: "Preencha o campo com ${label} válido ",
     },
@@ -11,10 +11,11 @@ const ModalForm = () => {
 
   const onFinish = (values) => {
     Modal.success({
-        content: 'Mensagem Enviada com sucesso!',
-      });
-      setIsModalOpen(false);
-    console.log(values);};
+      content: "Mensagem Enviada com sucesso!",
+    });
+    setIsModalOpen(false);
+    console.log(values);
+  };
   const layout = {
     labelCol: {
       span: 8,
@@ -37,11 +38,15 @@ const ModalForm = () => {
 
   return (
     <div>
-      <Button style={{backgroundColor:"#a1659d"}}type="primary" onClick={showModal}>
-       Atendimento Via E-mail
+      <Button
+        style={{ backgroundColor: "#a1659d" }}
+        type="primary"
+        onClick={showModal}
+      >
+        Atendimento Via E-mail
       </Button>
       <Modal
-      footer={null}
+        footer={null}
         title="Atendimento Via E-mail"
         open={isModalOpen}
         onOk={handleOk}

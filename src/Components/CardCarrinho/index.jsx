@@ -16,25 +16,28 @@ const CardCarrinho = ({ destino }) => {
   } = context;
 
   const totalPorItem = destino.value * destino.quantidade;
+
   const gridStyle2 = {
-    width: "50%",
-    textAlign: "end",
-    border: "1px solid #EEE",
+    width: "30%",
+    textAlign: "center",
+    border: "none",
   };
   const gridStyle1 = {
-    width: "50%",
-    textAlign: "center",
-    border: "1px solid #EEE",
+    width: "70%",
+    textAlign: "start",
+    border: "none",
+    height: "auto",
+    paddingBottom: "0",
   };
 
   return (
-    <Card hoverable={false}>
-      <Card.Grid style={gridStyle1}>
+    <Card>
+      <Card.Grid bordered={false} hoverable={false} style={gridStyle1}>
         <img width="200px" src={destino.imageUrl} />
         <h3>{destino.name}</h3>
       </Card.Grid>
 
-      <Card.Grid style={gridStyle2}>
+      <Card.Grid bordered={false} hoverable={false} style={gridStyle2}>
         <h3>R$ {destino.value.toFixed(2).replace(".", ",")}</h3>
         {destino.quantidade > 1 && (
           <Button

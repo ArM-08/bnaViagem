@@ -48,7 +48,6 @@ const Footer = () => {
               src={Logo}
             ></Image>
             <h4 style={{ margin: "10px", textAlign: "center" }}>
-              
               Bruh Viagem ©2022
             </h4>
           </Col>
@@ -68,25 +67,25 @@ const Footer = () => {
               Redes Sociais
             </h6>
             <a
-              style={{ fontSize: "30px"}}
+              style={{ fontSize: "30px" }}
               href="https://www.linkedin.com/in/alan-moraes08/"
             >
               <YoutubeFilled />
             </a>
             <a
-              style={{ fontSize: "25px"}}
+              style={{ fontSize: "25px" }}
               href="https://www.linkedin.com/in/alan-moraes08/"
             >
               <TwitterCircleFilled />
             </a>
             <a
-              style={{ fontSize: "25px"}}
+              style={{ fontSize: "25px" }}
               href="https://www.linkedin.com/in/alan-moraes08/"
             >
               <InstagramFilled />
             </a>
             <a
-              style={{ fontSize: "25px"}}
+              style={{ fontSize: "25px" }}
               href="https://www.linkedin.com/in/alan-moraes08/"
             >
               <LinkedinFilled />

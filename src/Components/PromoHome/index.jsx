@@ -4,16 +4,14 @@ import Ceara from "./../../assets/images/CearaPromo.png";
 import Orlando from "./../../assets/images/OrlandoPromo.png";
 const PromoHome = () => {
   return (
-    <div
-    style={{margin: '0 auto', width: "70%"}}
-    >
+    <div style={{ margin: "0 auto", width: "70%" }}>
       <h1>Pacotes para economizar</h1>
 
       <Row
         style={{
           width: "100%",
           justifyContent: "space-between",
-          gap:"20px"
+          gap: "20px",
         }}
       >
         <Card

@@ -15,9 +15,9 @@ const FavoritosHome = () => {
           display: "grid",
           gridTemplateColumns: "repeat(6, 10fr)",
           gridTemplateRows: "repeat(2, 10vw)",
-          gridGap: "15px",
-          marginTop: "20px",
-          marginBottom: "20px",
+          gridGap: "1vh",
+          marginTop: "2vh",
+          marginBottom: "2vh",
         }}
       >
         <div

@@ -1,4 +1,4 @@
-import {  Image, Menu } from "antd";
+import { Image, Menu } from "antd";
 import Sider from "antd/es/layout/Sider";
 import { useState } from "react";
 import {

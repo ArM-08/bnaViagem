@@ -13,12 +13,12 @@ const Home = () => {
       <NavBar />
       <img src={ImgHeader} style={{ width: "100vw" }} />
       <BuscaPassagem />
-      <PromoHome/>
-      <HomeInternacional/>
-      <HomeNacional/>
-      <AcordionHome/>
-      <FavoritosHome/>
-      <Footer/>
+      <PromoHome />
+      <HomeInternacional />
+      <HomeNacional />
+      <AcordionHome />
+      <FavoritosHome />
+      <Footer />
     </div>
   );
 };

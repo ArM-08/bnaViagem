@@ -1,6 +1,6 @@
 import { Row } from "antd";
 import CardPassagem from "../CardPassagem";
-import homeNacional from "./../BdDestinos/homeNacional.json"
+import homeNacional from "./../BdDestinos/homeNacional.json";
 
 const HomeNacional = () => {
   return (
@@ -13,13 +13,9 @@ const HomeNacional = () => {
           gap: "20px",
         }}
       >
-         {homeNacional.map(destino =>(
-          
-          <CardPassagem 
-          key={destino.id}
-          destino={destino}/>
-          ))}
-        
+        {homeNacional.map((destino) => (
+          <CardPassagem key={destino.id} destino={destino} />
+        ))}
       </Row>
     </div>
   );
