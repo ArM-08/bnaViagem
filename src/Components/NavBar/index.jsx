@@ -45,13 +45,13 @@ const items = [
     label: <a href="/">Home</a>,
   },
   {
-    label: <a href="/destinos">Destinos</a>,
+    label: <a href="destinos">Destinos</a>,
   },
   {
-    label: <a href="/promocoes">Promoções</a>,
+    label: <a href="promocoes">Promoções</a>,
   },
   {
-    label: <a href="/contato">Contato</a>,
+    label: <a href="contato">Contato</a>,
   },
   {
     label: <Log />,
