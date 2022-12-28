@@ -1,17 +1,12 @@
 import "antd/dist/reset.css";
 import { AuthProvider } from "./Context/AuthProvider";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ProtectedLayout } from "./Components/ProtectedLayout";
+
+
 import { useState, useEffect } from "react";
-import Home from "./Pages/Home";
-import Destinos from "./Pages/Destinos";
-import Promocoes from "./Pages/Promocoes";
-import Contato from "./Pages/Contato";
-import Cadastro from "./Pages/Cadastro";
-import DashBoard from "./Pages/Dashboard";
-import Login from "./Pages/Login";
+
 import { CartContext } from "./Context/CartContext";
 import destino from "./Components/BdDestinos/destino.json";
+import Rotas from "./Components/Routes";
 
 function App() {
   const [carrinho, setCarrinho] = useState([]);
@@ -123,24 +118,7 @@ function App() {
   return (
     <CartContext.Provider value={context} >
       <AuthProvider>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/destinos" element={<Destinos />} />
-            <Route path="/promocoes" element={<Promocoes />} />
-            <Route path="/contato" element={<Contato />} />
-            <Route path="/cadastro" element={<Cadastro />} />
-            <Route path="/login" element={<Login />} />
-            <Route
-              path="/profile"
-              element={
-                <ProtectedLayout>
-                  <DashBoard />
-                </ProtectedLayout>
-              }
-            />
-          </Routes>
-        </BrowserRouter>
+        <Rotas/>
       </AuthProvider>
     </CartContext.Provider>
   );
