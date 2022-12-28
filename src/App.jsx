@@ -121,7 +121,7 @@ function App() {
   };
 
   return (
-    <CartContext.Provider value={context}>
+    <CartContext.Provider value={context} >
       <AuthProvider>
         <BrowserRouter>
           <Routes>
