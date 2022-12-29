@@ -10,7 +10,7 @@ Vite config
 
 Vercel deploy
 
-https://bruh-viagem.vercel.app
+https://bna-viagem.vercel.app
 
 LoginTeste: eve.holt@reqres.in
 senha: cityslicka

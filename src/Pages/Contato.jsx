@@ -39,7 +39,7 @@ const Contato = () => {
         />
         <CardAjuda
           title="Minha Conta"
-          descricao="Saiba como acessar sua conta Bruh, alterar seu e-mail e senha, visualizar seus pedidos/confirmações, etc."
+          descricao="Saiba como acessar sua conta BNA, alterar seu e-mail e senha, visualizar seus pedidos/confirmações, etc."
         />
         <CardAjuda
           title="Compras e Pagamentos"
@@ -54,7 +54,7 @@ const Contato = () => {
           descricao="Conheça as condições especiais de reagendamento, o que fazer se a fronteira está fechada, etc."
         />
         <CardAjuda
-          title="Sobre a Bruh Viagem"
+          title="Sobre a BNA Viagem"
           descricao="Conheça quem somos, onde estamos, como entrar em contato com a gente, ser um parceiro e mais."
         />
         <CardAjuda
