@@ -40,7 +40,7 @@ const Login = () => {
             src={Logo}
             preview={false}
             width={100}
-            justifyContent="center"
+            justifycontent="center"
           />
         </a>
       </Row>
