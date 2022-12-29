@@ -26,7 +26,7 @@ const AcordionHome = () => {
         <Col xl={9}>
           <h2 style={{ color: "#FFF" }}>Compre sua passagem de ônibus</h2>
           <h3 style={{ color: "#FFF" }}>
-            Viaje de ônibus com o Bruh e conte com mais de 4.800 destinos para
+            Viaje de ônibus com o BNA Viagem e conte com mais de 2.800 destinos para
             curtir!
           </h3>
         </Col>

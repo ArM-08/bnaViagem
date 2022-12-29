@@ -4,9 +4,19 @@ import ModalLogin from "../ModalLogin";
 import Logo from "./../../assets/images/logo.png";
 import { useAuth } from "../../Context/AuthProvider/useAuth";
 import "./style.css";
-import { UserOutlined } from "@ant-design/icons";
+import { UserOutlined, ShoppingCartOutlined } from "@ant-design/icons";
+import { useContext } from "react";
+import {CartContext} from "./../../Context/CartContext/index"
+
+
+
 
 export const Log = () => {
+  const context = useContext(CartContext);
+  const {
+   quantidade,
+  } = context;
+
   const auth = useAuth();
   const logged = (
     <div style={{ display: "flex", flexDirection: "column" }}>
@@ -20,10 +30,13 @@ export const Log = () => {
     </div>
   );
   if (!auth.email) {
-    return <ModalLogin />;
+    return <div style={{display:"flex", gap:"0.5vw"}}><Button href="/profile"><ShoppingCartOutlined />{quantidade > 0 && <span>{quantidade}</span>}</Button><ModalLogin /></div>;
   }
   return (
-    <Popover content={logged} trigger="click">
+    <div>
+    <Button href="/profile" style={{margin:"0.5vw"}}><ShoppingCartOutlined />{quantidade > 0 && <span>{quantidade}</span>}</Button>
+    <Popover  content={logged} trigger="click">
+      
       <Button
         style={{ marginRight: "20px", backgroundColor: "#008000" }}
         type="primary"
@@ -31,8 +44,10 @@ export const Log = () => {
         icon={<UserOutlined />}
       />
     </Popover>
+    </div>
   );
 };
+
 const items = [
   {
     label: (
