@@ -1,4 +1,4 @@
-import { Card, Row } from "antd";
+import { Card } from "antd";
 
 const CardAjuda = ({ title, descricao }) => {
   return (

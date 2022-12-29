@@ -1,4 +1,4 @@
-import { Button, Card } from "antd";
+import { Button, Card, Image } from "antd";
 import { useContext } from "react";
 import { CartContext } from "../../Context/CartContext";
 import {
@@ -17,30 +17,19 @@ const CardCarrinho = ({ destino }) => {
 
   const totalPorItem = destino.value * destino.quantidade;
 
-  const gridStyle2 = {
-    width: "30%",
-    textAlign: "center",
-    border: "none",
-  };
-  const gridStyle1 = {
-    width: "70%",
-    textAlign: "start",
-    border: "none",
-    height: "auto",
-    paddingBottom: "0",
-  };
+ 
 
   return (
-    <Card>
-      <Card.Grid bordered={false} hoverable={false} style={gridStyle1}>
-        <img width="200px" src={destino.imageUrl} />
-        <h3>{destino.name}</h3>
-      </Card.Grid>
-
-      <Card.Grid bordered={false} hoverable={false} style={gridStyle2}>
-        <h3>R$ {destino.value.toFixed(2).replace(".", ",")}</h3>
-        {destino.quantidade > 1 && (
-          <Button
+    <Card style={{minWidth: "250px"}} >
+      <div style={{alignText:"start", display:"flex", alignItems:"center", gap:"2vh", flexWrap:"wrap" }}>
+        <Image width="200px" preview= {false} src={destino.imageUrl} />
+        <h3 style={{width:"35%"}}>{destino.name}</h3>
+        <h3 style={{width:"35%"}}>R$ {destino.value.toFixed(2).replace(".", ",")}</h3>
+        <div>
+          {destino.quantidade > 1 && (
+         
+         <Button
+          
             size="small"
             shape="circle"
             icon={<MinusCircleTwoTone />}
@@ -68,7 +57,14 @@ const CardCarrinho = ({ destino }) => {
           Subtotal ({destino.quantidade} itens) R${" "}
           {totalPorItem.toFixed(2).replace(".", ",")}
         </h4>
-      </Card.Grid>
+        </div>
+        </div>
+        <div style={{alignText:"end", display:"flex", flexDirection: "column",}}>
+        
+        </div>
+      
+
+      
     </Card>
   );
 };

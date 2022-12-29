@@ -25,7 +25,7 @@ const Carrinho = () => {
 
   return (
     <div>
-      <Card type="inner" title="Carrinho">
+      <Card type="inner" title="Carrinho" style={{minWidth:"300px"}}>
         {carrinho.map((destino) => (
           <CardCarrinho destino={destino} key={destino.id} />
         ))}

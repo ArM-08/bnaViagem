@@ -105,6 +105,7 @@ const Footer = () => {
           width: "70%",
           display: "flex",
           margin: "0 auto",
+          
         }}
       >
         <Col

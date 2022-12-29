@@ -1,4 +1,4 @@
-import { CalendarOutlined, CheckOutlined } from "@ant-design/icons";
+import { CalendarOutlined, CheckOutlined, PlusCircleOutlined } from "@ant-design/icons";
 import { Button, Card } from "antd";
 import { useContext } from "react";
 import { CartContext } from "../../Context/CartContext";
@@ -42,7 +42,7 @@ const CardPassagem = ({ destino }) => {
         style={{ marginBottom: "10px", 
         fontWeight: "bold" }}
       >
-        Comprar
+        <PlusCircleOutlined /> Carrinho
       </Button>
     </Card>
   );

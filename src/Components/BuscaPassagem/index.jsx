@@ -1,4 +1,4 @@
-import { Button, Col, Form, Input, Row, DatePicker, Space } from "antd";
+import { Button, Form, Input, Row, DatePicker, Space } from "antd";
 
 const BuscaPassagem = () => {
   return (
