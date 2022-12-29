@@ -113,7 +113,7 @@ const DashBoard = () => {
             textAlign: "center",
           }}
         >
-          Bruh Viagem ©2022
+          BNA Viagem ©2022
         </Footer>
       </Layout>
     </Layout>

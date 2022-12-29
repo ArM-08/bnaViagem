@@ -48,7 +48,7 @@ const Footer = () => {
               src={Logo}
             ></Image>
             <h4 style={{ margin: "10px", textAlign: "center" }}>
-              Bruh Viagem ©2022
+              BNA Viagem ©2022
             </h4>
           </Col>
           <Col
