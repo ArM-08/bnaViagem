@@ -13,6 +13,7 @@ function App() {
 
   const [quantidade, setQuantidade] = useState(0);
 
+
   const adicionaAoCarrinho = (destinoAAdicionar) => {
     const novoCarrinho = [...carrinho];
 

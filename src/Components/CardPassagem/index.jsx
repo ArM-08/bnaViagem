@@ -1,5 +1,5 @@
 import { CalendarOutlined, CheckOutlined, PlusCircleOutlined } from "@ant-design/icons";
-import { Button, Card } from "antd";
+import { Button, Card, message } from "antd";
 import { useContext } from "react";
 import { CartContext } from "../../Context/CartContext";
 
@@ -8,6 +8,17 @@ const CardPassagem = ({ destino }) => {
   const { adicionaAoCarrinho } = context;
   const { Meta } = Card;
 
+  const [messageApi, contextHolder] = message.useMessage();
+  const success = () => {
+    messageApi.open({
+      type: 'success',
+      content: 'Adicionado ao Carrinho',
+    });
+  };
+const handleClick = () => {
+   adicionaAoCarrinho(destino)
+    success()
+  }
   return (
     <Card
       key={destino.id}
@@ -36,8 +47,10 @@ const CardPassagem = ({ destino }) => {
           </p>
         }
       />
+      {contextHolder}
       <Button
-        onClick={() => adicionaAoCarrinho(destino)} 
+        onClick={handleClick} 
+        
         type="primary"
         style={{ marginBottom: "10px", 
         fontWeight: "bold" }}

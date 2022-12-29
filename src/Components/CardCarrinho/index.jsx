@@ -1,4 +1,4 @@
-import { Button, Card } from "antd";
+import { Button, Card, message, Popconfirm } from "antd";
 import { useContext } from "react";
 import { CartContext } from "../../Context/CartContext";
 import {
@@ -31,8 +31,16 @@ const CardCarrinho = ({ destino }) => {
     paddingBottom: "0",
   };
 
+  const confirm = (e) => {
+    deletaDoCarrinho(destino)
+    console.log(e);
+    message.success('Deletado com sucesso');
+  };
+
+
+
   return (
-    <Card>
+    <Card style={{marginBottom: "10px"}}>
       <Card.Grid  hoverable={false} style={gridStyle1}>
         <img width="200px" src={destino.imageUrl} />
         <h3>{destino.name}</h3>
@@ -58,12 +66,21 @@ const CardCarrinho = ({ destino }) => {
         }
         {<span>Quant: {destino.quantidade}</span>}
         {
+          <Popconfirm
+          title="Deseja deletar o item do carrinho?"
+          description="Deseja deletar do carrinho?"
+          onConfirm={confirm}
+          okText="Sim"
+          cancelText="Não"
+        >
           <Button
             size="small"
             shape="circle"
             icon={<DeleteTwoTone />}
-            onClick={() => deletaDoCarrinho(destino)}
+            
           />
+        </Popconfirm>
+          
         }
         <h4>
           Subtotal ({destino.quantidade} itens) R${" "}
