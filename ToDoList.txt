@@ -7,8 +7,8 @@
 [x] Add Carrinho system
 [x] Add context Button on login 
 [x] DashBoard Logout
-[ ] Add FakeJson
+[x] Add FakeJson
 [ ] Add post Create Account
-[ ] Add Find Travel 
+[x] Add Find Travel 
 [x] Add function Logout
 [ ] ADD Jest
