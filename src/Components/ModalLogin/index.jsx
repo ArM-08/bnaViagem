@@ -2,7 +2,7 @@ import { useAuth } from "./../../Context/AuthProvider/useAuth";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { Button, Modal, Form, Input, Avatar } from "antd";
+import { Button, Modal, Form, Input, message } from "antd";
 
 import { UserOutlined } from "@ant-design/icons";
 
