@@ -6,7 +6,11 @@ import { Button, Modal, Form, Input, message } from "antd";
 
 import { UserOutlined } from "@ant-design/icons";
 
+
+
 const ModalLogin = () => {
+  
+ 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const showModal = () => {
     setIsModalOpen(true);
@@ -18,6 +22,7 @@ const ModalLogin = () => {
     setIsModalOpen(false);
   };
 
+  
   const auth = useAuth();
 
   const navigate = useNavigate();
@@ -27,7 +32,7 @@ const ModalLogin = () => {
       await auth.authenticate(values.email, values.password);
       navigate("/profile");
     } catch (error) {
-      message.error("Invalid email or password");
+      message.error('email ou password incorretos')
     }
   }
 
