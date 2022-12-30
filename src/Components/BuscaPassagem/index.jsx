@@ -1,6 +1,58 @@
-import { Button, Form, Input, Row, DatePicker, Space } from "antd";
+import { Button, Form, Input, Row, DatePicker, Space, Modal} from "antd";
+import { useState, useEffect } from "react";
+import CardBusca from "../CardBusca";
+
+
+export const fetchData = async () => {
+  try {
+    let res = await fetch(`https://63aeee1fcb0f90e51468adf3.mockapi.io/bna/flights`);
+    res = await res.json();
+    return res;
+  } catch (err) {
+    console.log(err);
+  }
+};
+
 
 const BuscaPassagem = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [data, setData] = useState(null);
+  const [state, setState] = useState('');
+  const [filter, setFilter] = useState([]);
+  const [date, setDate] = useState([,])
+
+  useEffect(() => {
+    fetchData()
+      .then((res) => {
+        setData(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+  
+
+  const handleChange = (e) => {
+    const { value, name } = e.target;
+    setState({ ...state, [name]: value })
+  };
+
+  const handleSearch = () => {
+    const { Origem, Destino } = state;
+    const p = data.filter((search) => {
+      return search.origem === Origem && search.destino === Destino;
+    });
+    setIsModalOpen(true);
+    setFilter(p);
+  };
+
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div>
       <Row
@@ -25,6 +77,7 @@ const BuscaPassagem = () => {
               margin: "20px",
               width: "100%",
             }}
+            onFinish={handleSearch}
             // onFinish = {onFinish}
           >
             <Space.Compact
@@ -43,6 +96,8 @@ const BuscaPassagem = () => {
                   marginTop: "10px",
                 }}
                 placeholder="&#x1F50E; Saida"
+                name="Origem"
+                onChange={handleChange}
               />
               <Input
                 style={{
@@ -52,6 +107,8 @@ const BuscaPassagem = () => {
                   marginTop: "10px",
                 }}
                 placeholder="&#x1F50E; Destino"
+                name="Destino"
+                onChange={handleChange}
               />
               <DatePicker.RangePicker
                 placeholder={["Ida", "Volta"]}
@@ -64,6 +121,16 @@ const BuscaPassagem = () => {
                   minWidth: "150px",
                   marginTop: "10px",
                 }}
+                format={'DD/MM/YY'}
+                onChange={(values) => {
+                setDate(values.map(date=>{
+                  return (date).format('DD/MM/YY')
+                 
+                }))
+                console.log(date)
+                }}
+                
+                
               />
 
               <Button
@@ -76,6 +143,7 @@ const BuscaPassagem = () => {
                   alignSelf: "center",
                   marginTop: "10px",
                 }}
+                
               >
                 Pesquisar
               </Button>
@@ -83,6 +151,16 @@ const BuscaPassagem = () => {
 
             <Space.Compact block></Space.Compact>
           </Form>
+          <Modal title="Busca Voos" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+          {state === '' || filter.length === 0 ? <p>No Flights Found</p> :
+
+            <div>
+              {filter.map((search, index) =>
+              <CardBusca key={index} origem={search.origem} destino={search.destino} ida={date[0]} volta={date[1]} value={search.value} />
+            )}
+              </div>
+              }
+      </Modal>
         </Row>
       </Row>
     </div>
