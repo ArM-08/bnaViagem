@@ -33,6 +33,7 @@ const handleClick = () => {
       <Meta
         title={destino.name}
         description={
+          <div>
           <p>
             <CalendarOutlined /> {destino.diaria}
             <br />
@@ -40,11 +41,13 @@ const handleClick = () => {
             <br />
             <CheckOutlined /> {destino.passagemaerea}
             <br />
-            A partir de <br />
+            
+            A partir de
+            </p>
+            <h2 style={{fontSize:"20px", color:"#D35400"}}>
             R${destino.value}
-            <br />
-            {destino.parcelas}
-          </p>
+            </h2>
+            </div>
         }
       />
       {contextHolder}

@@ -109,9 +109,9 @@ const Footer = () => {
         }}
       >
         <Col
-          xs={6}
-          sm={6}
-          md={9}
+          xs={11}
+          sm={10}
+          md={10}
           style={{
             display: "flex",
             flexDirection: "column",
@@ -131,9 +131,9 @@ const Footer = () => {
         </Col>
         <Col
           push={1}
-          xs={6}
-          sm={6}
-          md={9}
+          xs={12}
+          sm={11}
+          md={12}
           style={{
             color: "#000",
             display: "flex",
@@ -149,10 +149,10 @@ const Footer = () => {
           <a href="">Nacionais</a>
         </Col>
         <Col
-          push={3}
-          xs={2}
-          sm={4}
-          md={4}
+         
+          xs={3}
+          sm={3}
+          md={2}
           style={{
             display: "flex",
             flexDirection: "column",

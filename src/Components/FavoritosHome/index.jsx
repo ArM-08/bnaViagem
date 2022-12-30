@@ -1,10 +1,4 @@
-import Madrid from "./../../assets/images/madrid.png";
-import Paris from "./../../assets/images/paris.png";
-import Rio from "./../../assets/images/rio.png";
-import Noronha from "./../../assets/images/noronha.png";
-import Roma from "./../../assets/images/roma.png";
-import Vitoria from "./../../assets/images/vitoria.png";
-import Bruxelas from "./../../assets/images/bruxelas.png";
+
 
 const FavoritosHome = () => {
   return (
@@ -31,7 +25,7 @@ const FavoritosHome = () => {
           <a href="">
             <img
               style={{ width: "100%", height: "100%", borderRadius: "5px" }}
-              src={Noronha}
+              src="https://thumbcdn-9.hotelurbano.net/-Bz008nKBzCgDvi8E7aLtoszNb0=/1240x0/center/middle/filters:format(webp):strip_icc()/http://s3.amazonaws.com/legado-prod/prod/ofertas/imagens/2022/07/05/11/43/amazing_sunset_in_fernando_de_noronha_brazil_picture_id1177136733.jpg"
             />
           </a>
         </div>
@@ -46,7 +40,7 @@ const FavoritosHome = () => {
           <a href="">
             <img
               style={{ width: "100%", height: "100%", borderRadius: "5px" }}
-              src={Rio}
+              src="https://thumbcdn-4.hotelurbano.net/iDo9B1UqBK5N4RGEGxMUi_q-mQY=/1240x0/center/middle/filters:format(webp):strip_icc():quality(80)/http://s3.amazonaws.com/legado-prod/prod/ofertas/imagens/2022/10/05/12/45/shutterstock_1283691793.jpg"
             />
           </a>
         </div>
@@ -61,7 +55,7 @@ const FavoritosHome = () => {
           <a href="">
             <img
               style={{ width: "100%", height: "100%", borderRadius: "5px" }}
-              src={Vitoria}
+              src="https://thumbcdn-8.hotelurbano.net/OT8h5L05M30wicToCxNQnIYPK5Q=/1240x0/center/middle/filters:format(webp):strip_icc():quality(80)/http://s3.amazonaws.com/legado-prod/prod/ofertas/imagens/2022/08/12/09/28/colosseum_in_rome_with_morning_sun_picture_id1290101405.jpg"
             />
           </a>
         </div>
@@ -76,7 +70,7 @@ const FavoritosHome = () => {
           <a href="">
             <img
               style={{ width: "100%", height: "100%", borderRadius: "5px" }}
-              src={Paris}
+              src="https://thumbcdn-6.hotelurbano.net/fI0OMiIeliL5uhh-1LHc_kJJiY4=/1240x0/center/middle/filters:format(webp):strip_icc()/http://s3.amazonaws.com/legado-prod/prod/ofertas/imagens/2022/11/25/15/12/iStock_1347242750.jpg"
             />
           </a>
         </div>
@@ -91,7 +85,7 @@ const FavoritosHome = () => {
           <a href="">
             <img
               style={{ width: "100%", height: "100%", borderRadius: "5px" }}
-              src={Roma}
+              src="https://thumbcdn-c.hotelurbano.net/X5gXVREc1TOPe_55PWrf3rf2GIg=/1240x0/center/middle/filters:format(webp):strip_icc()/http://s3.amazonaws.com/legado-prod/prod/ofertas/imagens/2022/08/16/16/16/shutterstock_1927743911.png"
             />
           </a>
         </div>
@@ -106,7 +100,7 @@ const FavoritosHome = () => {
           <a href="">
             <img
               style={{ width: "100%", height: "100%", borderRadius: "5px" }}
-              src={Bruxelas}
+              src="https://thumbcdn-6.hotelurbano.net/tw534aVJdXx0ro03BTXPHG8s-Bk=/1240x0/center/middle/filters:format(webp):strip_icc()/http://s3.amazonaws.com/legado-prod/prod/ofertas/imagens/2022/08/29/16/07/old_cabildo_town_hall_of_buenos_aires_picture_id1324335093.jpg"
             />
           </a>
         </div>
@@ -121,7 +115,7 @@ const FavoritosHome = () => {
           <a href="#">
             <img
               style={{ width: "100%", height: "100%", borderRadius: "5px" }}
-              src={Madrid}
+              src="https://thumbcdn-1.hotelurbano.net/WYjIN41Z-Sn2PiDZCbLgFCOKIqY=/1240x0/center/middle/filters:format(webp):strip_icc()/http://s3.amazonaws.com/legado-prod/prod/ofertas/imagens/2022/09/23/15/04/iStock_1420767973.jpg"
             />
           </a>
         </div>

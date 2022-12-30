@@ -6,7 +6,7 @@
     "idaevolta": "ida e volta", 
     "hospedagem": "Hospedagem",
     "passagemaerea":"Passagem Aérea",
-   "value": 1500.00},
+   "value": 500.00},
 
     {"id":2,
         "name":"Salvador - SSA", 
@@ -15,7 +15,7 @@
     "idaevolta": "ida e volta", 
     "hospedagem": "Hospedagem",
     "passagemaerea":"Passagem Aérea",
-    "value": 1500.00},
+    "value": 600.00},
 
     {"id":3,
         "name":"Bonito - CGR",  
@@ -24,7 +24,7 @@
     "idaevolta": "ida e volta", 
     "hospedagem": "Hospedagem",
     "passagemaerea":"Passagem Aérea",
-    "value": 1500.00},
+    "value": 650.00},
 
     {"id":4,
         "name":"Fortaleza - FOR",  
@@ -33,7 +33,7 @@
      "idaevolta": "ida e volta", 
      "hospedagem": "Hospedagem",
      "passagemaerea":"Passagem Aérea",
-     "value": 1500.00},
+     "value": 700.00},
 
     {"id":5,
         "name":"Foz do Iguaçu - IGU",  
@@ -42,7 +42,7 @@
     "idaevolta": "ida e volta", 
     "hospedagem": "Hospedagem",
     "passagemaerea":"Passagem Aérea",
-    "value": 1500.00},
+    "value": 900.00},
 
     {"id":6,
         "name":"João Pessoa - JPA", 
@@ -51,7 +51,7 @@
      "idaevolta": "ida e volta", 
      "hospedagem": "Hospedagem",
      "passagemaerea":"Passagem Aérea",
-     "value": 1500.00},
+     "value": 800.00},
 
     {"id":7,
         "name":"Fernando de Noronha - FEN",  
@@ -69,7 +69,7 @@
     "idaevolta": "ida e volta", 
     "hospedagem": "Hospedagem",
     "passagemaerea":"Passagem Aérea",
-    "value":1500.00},
+    "value": 700.00},
 
     {"id":9,
         "name":"Bruxelas", 
@@ -87,7 +87,7 @@
     "idaevolta": "ida e volta", 
     "hospedagem": "Hospedagem",
     "passagemaerea":"Passagem Aérea",
-    "value": 1500.00},
+    "value": 3500.00},
 
     {"id":11,
         "name":"Ilhas Maldivas",  
@@ -96,7 +96,7 @@
     "idaevolta": "ida e volta", 
     "hospedagem": "Hospedagem",
     "passagemaerea":"Passagem Aérea",
-    "value": 1500.00},
+    "value": 5500.00},
 
     {"id":12,
         "name":"Madrid",  
@@ -105,7 +105,7 @@
     "idaevolta": "ida e volta", 
     "hospedagem": "Hospedagem",
     "passagemaerea":"Passagem Aérea",
-    "value": 1500.00},
+    "value": 3500.00},
     {"id":13,
         "name":"Paris",  
     "imageUrl": "https://thumbcdn-z.hotelurbano.net/TUJGhWsyER8vDz-qDD5UHOub2Dg=/320x240/center/middle/filters:quality(40)/https://s3.amazonaws.com/legado-prod/prod/ofertas/imagens/2022/09/15/10/30/iStock_472013011.jpg", 
@@ -113,7 +113,7 @@
     "idaevolta": "ida e volta",
     "hospedagem": "Hospedagem",
     "passagemaerea":"Passagem Aérea",
-    "value": 1500.00},
+    "value": 4500.00},
 
     {"id":14,
         "name":"Punta Cana", 
@@ -122,7 +122,7 @@
     "idaevolta": "ida e volta", 
     "hospedagem": "Hospedagem",
     "passagemaerea":"Passagem Aérea",
-    "value": 1500.00},
+    "value": 6500.00},
 
     {"id":15,
         "name":"Roma",  
@@ -131,7 +131,7 @@
     "idaevolta": "ida e volta", 
     "hospedagem": "Hospedagem",
     "passagemaerea":"Passagem Aérea",
-    "value": 1500.00},
+    "value": 3500.00},
 
     {"id":16,
         "name":"Cancún",  
@@ -140,6 +140,6 @@
     "idaevolta": "ida e volta", 
     "hospedagem": "Hospedagem",
     "passagemaerea":"Passagem Aérea",
-    "value": 1500.00}
+    "value": 5500.00}
     
 ]
