@@ -1,0 +1,32 @@
+.containerPromo{
+    margin: 0 auto;
+     width: 70% ;
+}
+.rowPromo{
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.CardPromo1{
+    width: 400px;
+            height: 290px;
+            background-image: url(./../../assets/images/PortoGalinhasPromo.png);
+}
+.CardPromo2{
+    width: 400px;
+            height: 290px;
+            background-image: url(./../../assets/images/CearaPromo.png);
+}
+.CardPromo3{
+    width: 400px;
+            height: 290px;
+            background-image: url(./../../assets/images/OrlandoPromo.png);
+}
+
+@media only screen and (min-width:576px) and (max-width: 1170px) {
+.rowPromo{
+    justify-content: center;
+   
+    }
+}
