@@ -1,0 +1,25 @@
+.acordionHome {
+    width: 70%;
+    background-color: rgb(79, 3, 194);
+    height: auto;
+    min-height: 120px;
+    min-width: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+}
+
+.imgAcordion {
+    width: 200px;
+    height: 150px;
+}
+
+.textAcordion {
+    color: #FFF
+}
+
+.colButton {
+    margin-left: 10px;
+}

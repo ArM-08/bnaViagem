@@ -1,41 +1,30 @@
 import { Row, Col, Button } from "antd";
 import Onibus from "./../../assets/images/passagemOnibus.png";
+import "./index.css"
+
+
 const AcordionHome = () => {
   return (
     <div>
       <Row
+        className="acordionHome"
         justify="center"
         align="middle"
-        style={{
-          width: "70%",
-          backgroundColor: "rgb(79, 3, 194)",
-          height: "auto",
-          minHeight: "120px",
-          minWidth: "200px",
-          margin: "0 auto",
-          marginTop: "50px",
-          borderRadius: "10px",
-          display: "flex",
-
-          padding: "10px",
-        }}
       >
         <Col xl={8} align="center">
-          <img style={{ width: "200px", height: "150px" }} src={Onibus}></img>
+          <img className="imgAcordion" src={Onibus}></img>
         </Col>
         <Col xl={9}>
-          <h2 style={{ color: "#FFF" }}>Compre sua passagem de ônibus</h2>
-          <h3 style={{ color: "#FFF" }}>
+          <h2 className="textAcordion">Compre sua passagem de ônibus</h2>
+          <h3 className="textAcordion">
             Viaje de ônibus com o BNA Viagem e conte com mais de 2.800 destinos para
             curtir!
           </h3>
         </Col>
         <Col
+        className="colButton"
           xl={6}
           align="center"
-          style={{
-            marginLeft: "10px",
-          }}
         >
           <Button>Saiba Mais</Button>
         </Col>

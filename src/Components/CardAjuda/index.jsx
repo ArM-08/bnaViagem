@@ -1,20 +1,9 @@
 import { Card } from "antd";
+import "./index.css";
 
 const CardAjuda = ({ title, descricao }) => {
   return (
-    <Card
-      hoverable={true}
-      align="middle"
-      style={{
-        display: "flex",
-        width: 400,
-        minHeight: 120,
-        height: "auto",
-        justifyContent: "center",
-        borderColor: "#a1659d ",
-        color: "#a1659d",
-      }}
-    >
+    <Card className="cardAjuda" hoverable={true} align="middle">
       <h2>{title}</h2>
 
       <p>{descricao}</p>

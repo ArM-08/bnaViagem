@@ -1,0 +1,56 @@
+.containerBusca {
+    text-align: center;
+    width: 70%;
+    background-color: #FFF;
+    height: auto;
+    position: relative;
+    left: 15%;
+    top: -75px;
+    min-height: 120px;
+    min-width: 220px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.textBusca {
+    margin-left: 28px;
+    margin-top: 20px;
+}
+
+.linhaForm {
+    width: 100%;
+}
+
+.formBusca {
+    margin: 20px;
+    width: 100%;
+}
+
+.spaceCompact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.inputForm {
+    width: 30%;
+    height: 40px;
+    min-width: 150px;
+    margin-top: 10px;
+}
+
+.dataPicker {
+    width: 25%;
+    height: 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    min-width: 150px;
+    margin-top: 10px;
+}
+
+.buttonPesquisa {
+    border-radius: 10px !important;
+    margin-left: 10px;
+    width: 90px;
+    align-self: center;
+    margin-top: 10px;
+}

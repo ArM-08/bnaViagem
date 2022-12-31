@@ -1,0 +1,9 @@
+.cardAjuda{
+    display:flex;
+        width: 400px;
+        min-height: 120px;
+        height: auto;
+        justify-content: center;
+        border-color: #a1659d ;
+        color: #a1659d;
+}
