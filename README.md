@@ -2,7 +2,7 @@
 Site Funcional
 https://bna-viagem.vercel.app
 
-![image](https://user-images.githubusercontent.com/62227850/210271062-42b3eb29-d1f5-4cba-80b0-df76cc3b5f5d.png)
+![mockup bna](https://user-images.githubusercontent.com/62227850/210273866-9c7f17ec-2025-4412-8e99-96fa8cb6bcc4.jpg)
 
 
 Projeto produzido no React utilizando JS
