@@ -1,17 +1,13 @@
 import { Row } from "antd";
 import CardPassagem from "../CardPassagem";
 import homeNacional from "./../BdDestinos/homeNacional.json";
-
+import "./../HomeInternacional/index.css"
 const HomeNacional = () => {
   return (
-    <div style={{ margin: "0 auto", width: "70%", marginTop: "30px" }}>
+    <div className="containerHomeTravels" >
       <h1>Viagens nacionais</h1>
       <Row
-        style={{
-          width: "100%",
-          justifyContent: "space-around",
-          gap: "20px",
-        }}
+        className="containerCardsHome"
       >
         {homeNacional.map((destino) => (
           <CardPassagem key={destino.id} destino={destino} />

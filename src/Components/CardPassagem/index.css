@@ -1,0 +1,14 @@
+.cardPassagem{
+    width: 300px; 
+        height: 470px;
+}
+
+.cardPassagem h2 { 
+    font-size:20px;
+    color:#D35400
+}
+
+.btnCardPassagem{
+    margin-bottom: 10px;
+        font-weight: bold;
+}

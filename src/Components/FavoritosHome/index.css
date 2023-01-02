@@ -1,0 +1,66 @@
+
+.containerFavorito{
+    width: 70%;
+    margin: 0 auto 
+}
+
+.containerFavorito h1{
+    margin-top: 20px;
+}
+.favoritoGrid{
+    display: grid; 
+    grid-template-columns: repeat(6, 10fr);
+    grid-template-rows: repeat(2, 10vw);
+    grid-gap: 1vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+.favoritoGrid img {
+    width: 100%;
+     height: 100%;
+     border-radius: 5px
+}
+
+.bigImage{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.firstImage{
+    grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
+}
+.secondImage{
+    grid-column-start: 5;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 2;
+}
+.thirdImage{
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.fourImage{
+    grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 3;
+}
+.fiveImage{
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.sixImage{
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}

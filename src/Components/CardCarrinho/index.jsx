@@ -6,6 +6,7 @@ import {
   PlusCircleTwoTone,
   DeleteTwoTone,
 } from "@ant-design/icons";
+import "./index.css"
 
 const CardCarrinho = ({ destino }) => {
   const context = useContext(CartContext);
@@ -17,19 +18,7 @@ const CardCarrinho = ({ destino }) => {
 
   const totalPorItem = destino.value * destino.quantidade;
 
-  const gridStyle2 = {
-    width: "30%",
-    textAlign: "center",
-    border: "none",
-  };
-  const gridStyle1 = {
-    width: "70%",
-    minWidth: "240px",
-    textAlign: "start",
-    border: "none",
-    height: "auto",
-    paddingBottom: "0",
-  };
+ 
 
   const confirm = (e) => {
     deletaDoCarrinho(destino)
@@ -40,13 +29,13 @@ const CardCarrinho = ({ destino }) => {
 
 
   return (
-    <Card style={{marginBottom: "10px"}}>
-      <Card.Grid  hoverable={false} style={gridStyle1}>
-        <img width="200px" src={destino.imageUrl} />
+    <Card className="cardCarrinho">
+      <Card.Grid  hoverable={false} className="cardGrid1">
+        <img src={destino.imageUrl} />
         <h3>{destino.name}</h3>
       </Card.Grid>
 
-      <Card.Grid  hoverable={false} style={gridStyle2}>
+      <Card.Grid  hoverable={false} className="cardGrid2">
         <h3>R$ {destino.value.toFixed(2).replace(".", ",")}</h3>
         {destino.quantidade > 1 && (
           <Button

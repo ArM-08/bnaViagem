@@ -1,3 +1,92 @@
+.linhasFooter {
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1)
+}
+
+
+.firstLineContainer {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.footerLogoCol {
+    text-align: start;
+    display: flex;
+    align-items: center;
+}
+
+.logoFooter {
+    width: 40px !important;
+    height: 40px;
+    margin-left: 30px;
+    margin: 10px;
+}
+
+.footerLogoCol h4 {
+    margin: 10px;
+    text-align: center
+}
+
+.footerRedesCol {
+    text-align: end;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 2px;
+}
+
+.footerRedesCol a {
+    font-size: 25px;
+}
+
+.footerRedesCol h6 {
+    font-size: 18px;
+    margin-Right: 20px
+}
+
+.secondLineFooter {
+    text-align: center;
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.firstColFooter {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    text-align: start;
+}
+
+.secondColFooter {
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    text-align: start;
+}
+
+.thirdColFooter {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    text-align: start;
+}
+
+
 a {
-    color:#000
+    color: #000
+}
+
+
+@media only screen and (max-width:576px) {
+    .footerLogoCol {
+        justify-content: center;
+    }
+
+    .footerRedesCol {
+        justify-content: center;
+    }
 }

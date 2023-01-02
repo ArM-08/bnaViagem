@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { CartContext } from "../../Context/CartContext";
 import CardCarrinho from "../CardCarrinho";
 import { Button, Card, message } from "antd";
-
+import "./index.css"
 const Carrinho = () => {
   const context = useContext(CartContext);
   const { carrinho } = context;
@@ -25,22 +25,17 @@ const Carrinho = () => {
 
   return (
     <div>
-      <Card type="inner" title="Carrinho" style={{minWidth:"400px"}}>
+      <Card type="inner" title="Carrinho" className="containerCarrinho">
         {carrinho.map((destino) => (
           <CardCarrinho destino={destino} key={destino.id} />
         ))}
         {carrinho.length >= 1 && (
-          <div style={{ textAlign: "end" }}>
+          <div className="total" >
             <h3> Valor Total: R$ {total.toFixed(2).replace(".", ",")} </h3>
             {contextHolder}
             <Button
+            className="btnTotal"
               type="primary"
-              style={{
-                margin: "10px",
-                alignText: "end",
-                backgroundColor: "#39ff14",
-                fontWeight: "bold",
-              }}
               onClick={success}
             >
               Finalizar Compra

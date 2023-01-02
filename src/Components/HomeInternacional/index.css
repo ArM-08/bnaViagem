@@ -1,0 +1,11 @@
+.containerHomeTravels{
+    margin: 0 auto;
+     width: 70%;
+     margin-top: 30px
+}
+
+.containerCardsHome{
+    width: 100%;
+          justify-content: space-around;
+          gap:  20px;
+}

@@ -1,0 +1,20 @@
+.cardCarrinho{
+    margin-bottom: 10px;
+}
+
+
+.cardGrid1{
+    width: 70% !important;
+    min-width: 240px;
+    text-align: start;
+    height: auto;
+    padding-bottom: 0;
+}
+.cardGrid1 img{
+    width:200px;
+}
+.cardGrid2{
+    width: 30% !important;
+    text-align: center;
+
+}

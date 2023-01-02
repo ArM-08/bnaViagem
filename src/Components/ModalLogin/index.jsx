@@ -60,10 +60,10 @@ const ModalLogin = () => {
           onFinish={onFinish}
         >
           <Form.Item label="Email" name="email">
-            <Input style={{ width: "300px" }} />
+            <Input/>
           </Form.Item>
           <Form.Item label="Password" name="password">
-            <Input.Password style={{ width: "300px" }} />
+            <Input.Password  />
           </Form.Item>
           <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
             <Button style={{ margin: "1vh" }} type="primary" htmlType="submit">

@@ -3,7 +3,7 @@ import { Header } from "antd/es/layout/layout";
 import ModalLogin from "../ModalLogin";
 import Logo from "./../../assets/images/logo.png";
 import { useAuth } from "../../Context/AuthProvider/useAuth";
-import "./style.css";
+import "./index.css";
 import { UserOutlined, ShoppingCartOutlined } from "@ant-design/icons";
 import { useContext } from "react";
 import {CartContext} from "./../../Context/CartContext/index"
@@ -19,7 +19,7 @@ export const Log = () => {
 
   const auth = useAuth();
   const logged = (
-    <div style={{ display: "flex", flexDirection: "column" }}>
+    <div className="containerButtonLogged">
       <Button type="text" href="/profile">
         Minha conta
       </Button>
@@ -30,15 +30,15 @@ export const Log = () => {
     </div>
   );
   if (!auth.email) {
-    return <div style={{display:"flex", gap:"0.5vw"}}><Button href="/profile"><ShoppingCartOutlined />{quantidade > 0 && <span>{quantidade}</span>}</Button><ModalLogin /></div>;
+    return <div className="containerButtonDeslogeed"><Button href="/profile"><ShoppingCartOutlined />{quantidade > 0 && <span>{quantidade}</span>}</Button><ModalLogin /></div>;
   }
   return (
     <div>
-    <Button href="/profile" style={{margin:"0.5vw"}}><ShoppingCartOutlined />{quantidade > 0 && <span>{quantidade}</span>}</Button>
+    <Button className="buttonCart" href="/profile"><ShoppingCartOutlined />{quantidade > 0 && <span>{quantidade}</span>}</Button>
     <Popover  content={logged} trigger="click">
       
       <Button
-        style={{ marginRight: "20px", backgroundColor: "#008000" }}
+        className="buttonConta"
         type="primary"
         shape="circle"
         icon={<UserOutlined />}
@@ -52,7 +52,7 @@ const items = [
   {
     label: (
       <a href="/">
-        <img src={Logo} style={{ width: "50px", height: "50px" }} />
+        <img className="imgLogo" src={Logo}  />
       </a>
     ),
   },
@@ -75,18 +75,12 @@ const items = [
 
 const NavBar = () => {
   return (
-    <Header style={{ width: "100vw", height: "100%" }}>
-      <Row style={{ width: "100vw" }}>
+    <Header className="containerNav">
+      <Row >
         <Menu
           mode="horizontal"
           items={items}
-          style={{
-            textDecoration: "none",
-            width: "100vw",
-            justifyContent: "space-between",
-            minHeight: "80px",
-            alignItems: "center",
-          }}
+          className="menuNav"
         />
       </Row>
     </Header>

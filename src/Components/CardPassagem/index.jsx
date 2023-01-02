@@ -2,6 +2,7 @@ import { CalendarOutlined, CheckOutlined, PlusCircleOutlined } from "@ant-design
 import { Button, Card, message } from "antd";
 import { useContext } from "react";
 import { CartContext } from "../../Context/CartContext";
+import "./index.css"
 
 const CardPassagem = ({ destino }) => {
   const context = useContext(CartContext);
@@ -25,10 +26,7 @@ const handleClick = () => {
       bordered={false}
       hoverable="true"
       cover={<img alt="example" src={destino.imageUrl} />}
-      style={{
-        width: 300,
-        height: "470px",
-      }}
+      className="cardPassagem"
     >
       <Meta
         title={destino.name}
@@ -40,11 +38,10 @@ const handleClick = () => {
             <CheckOutlined /> {destino.hospedagem}
             <br />
             <CheckOutlined /> {destino.passagemaerea}
-            <br />
-            
+            <br /> 
             A partir de
             </p>
-            <h2 style={{fontSize:"20px", color:"#D35400"}}>
+            <h2>
             R${destino.value}
             </h2>
             </div>
@@ -53,10 +50,8 @@ const handleClick = () => {
       {contextHolder}
       <Button
         onClick={handleClick} 
-        
+        className="btnCardPassagem"
         type="primary"
-        style={{ marginBottom: "10px", 
-        fontWeight: "bold" }}
       >
         <PlusCircleOutlined /> Carrinho
       </Button>

@@ -1,0 +1,14 @@
+.containerCarrinho{
+    min-width:400px;
+}
+
+.total{
+    text-align: end
+}
+
+.btnTotal{
+    margin: 10px;
+     text-align: end;
+                background-color:#39ff14;
+                font-weight: bold;
+}

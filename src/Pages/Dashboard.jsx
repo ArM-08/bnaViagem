@@ -32,7 +32,7 @@ const DashBoard = () => {
       "Logout",
       "4",
       <a onClick={auth.logout}>
-        {" "}
+        
         <LogoutOutlined style={{ color: "#FF0000" }} />
       </a>
     ),
