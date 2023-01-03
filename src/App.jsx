@@ -114,11 +114,13 @@ function App() {
   };
 
   return (
-    <CartContext.Provider value={context}>
+    
       <AuthProvider>
+        <CartContext.Provider value={context}>
         <MainRoutes />
+        </CartContext.Provider>
       </AuthProvider>
-    </CartContext.Provider>
+ 
   );
 }
 

@@ -30,7 +30,7 @@ const Contato = () => {
         />
         <CardAjuda
           title="Compras e Pagamentos"
-          descricao="Saiba como comprar no Hurb, nossas formas de pagamento, como utilizar seus Hurb Créditos, etc."
+          descricao="Saiba como comprar na BNA, nossas formas de pagamento, como utilizar seus Créditos, etc."
         />
         <CardAjuda
           title="Boleto Vencido"
