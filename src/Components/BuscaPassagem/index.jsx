@@ -49,7 +49,9 @@ const BuscaPassagem = () => {
   const handleOk = () => {
     setIsModalOpen(false);
   };
- 
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
 
   return (
     <div>
@@ -98,7 +100,10 @@ const BuscaPassagem = () => {
           <Modal
             title="Busca Voos"
             open={isModalOpen}
-            onOk={handleOk} 
+            onOk={handleOk}
+            footer={null}
+            onCancel={handleCancel}
+            
           >
             {state === "" || filter.length === 0 ? (
               <p>No Flights Found</p>
