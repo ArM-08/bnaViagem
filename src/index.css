@@ -29,17 +29,19 @@
 /*CADASTRO*/
 
 .cadastroContainer{
-        width: 70%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     
 }
 .logoContainerCad{
-    width: 100%;
-          margin: 20px;
-          display: flex;
-          justify-Content: center;
+    
+       width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    
 }
 .formContainer{
     width: 100%;
@@ -49,6 +51,9 @@
 }
 .formContainer input{
     width: 400px;
+}
+.logoContainer image{
+    margin: 0 auto;
 }
 
 

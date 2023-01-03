@@ -7,10 +7,10 @@ const Cadastro = () => {
     className="cadastroContainer"
     >
       <Row
-        className="logoContainer"
+        className="logoContainerCad"
       >
         <a href="/">
-          {" "}
+          
           <Image
             src={Logo}
             preview={false}
