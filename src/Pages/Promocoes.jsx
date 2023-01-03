@@ -10,25 +10,16 @@ const Promocoes = () => {
   return (
     <div>
       <NavBar />
-      <img src={ImgHeader} style={{ width: "100vw" }} />
+      <img src={ImgHeader} className="imgHeader" />
       <BuscaPassagem />
       <Row
-        style={{
-          width: "70%",
-          margin: "0 auto",
-          marginBottom: "20px",
-        }}
+  className="promoTitle"
       >
         <h1>As melhores promoções do mundo!</h1>
       </Row>
       <Row
-        style={{
-          width: "70%",
-          justifyContent: "space-between",
-          gap: "20px",
-          margin: "0 auto",
-          marginBottom: "20px",
-        }}
+       className="cardPromoContainer"
+        
       >
         {promocoes.map((destino) => (
           <CardPassagem key={destino.id} destino={destino} />

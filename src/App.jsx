@@ -1,6 +1,6 @@
 import "antd/dist/reset.css";
 import { AuthProvider } from "./Context/AuthProvider";
-
+import "./index.css"
 
 import { useState, useEffect } from "react";
 

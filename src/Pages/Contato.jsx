@@ -9,25 +9,12 @@ const Contato = () => {
     <div>
       <NavBar />
       <Row
-        style={{
-          width: "70%",
-          justifyContent: "center",
-          margin: "0 auto",
-          marginTop: "30px",
-          marginBottom: "30px",
-        }}
+      className="pageContatTitle"  
       >
         <h1>Como podemos te ajudar?</h1>
       </Row>
       <Row
-        style={{
-          width: "70%",
-          justifyContent: "center",
-          gap: "10px",
-          margin: "0 auto",
-          marginTop: "20px",
-          marginBottom: "20px",
-        }}
+        className="cardsContainer"
       >
         <CardAjuda
           title="Sobre o Cancelamento"
@@ -67,12 +54,7 @@ const Contato = () => {
         />
       </Row>
       <Row
-        style={{
-          width: "70%",
-          margin: "0 auto",
-          marginBottom: "20px",
-          justifyContent: "center",
-        }}
+        className="rowBtn"
       >
         <ModalForm />
       </Row>

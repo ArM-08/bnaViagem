@@ -42,19 +42,10 @@ const DashBoard = () => {
 
   const [selectedMenuItem, setSelectedMenuItem] = useState("1");
 
-  const componentsSwtich = (key) => {
-    switch (key) {
-      case "1":
-        return <Principal />;
-      case "2":
-        return <Carrinho />;
-      case "3":
-        return <Conta />;
-      case "4":
-
-      default:
-        break;
-    }
+  const componentsSwitch = {
+      1:<Principal />,
+        2:<Carrinho />,
+        3:<Conta />
   };
 
   return (
@@ -71,16 +62,10 @@ const DashBoard = () => {
         onBreakpoint={(value) => setCollapsed(value)}
       >
         <div
-          style={{
-            height: 40,
-            width: 40,
-            margin: "0 auto",
-            marginTop: " 20px",
-            marginBottom: " 20px",
-          }}
+          className="logoContainerDash"
         >
           <a href="/">
-            {" "}
+           
             <Image preview={false} src={Logo} width="40px" />
           </a>
         </div>
@@ -93,25 +78,13 @@ const DashBoard = () => {
         />
       </Sider>
       <Layout className="site-layout">
-        <Content
-          style={{
-            margin: "0",
-          }}
-        >
-          <div
-            style={{
-              padding: 24,
-              minHeight: 360,
-              background: "#FFF",
-            }}
-          >
-            {componentsSwtich(selectedMenuItem)}
-          </div>
+        <Content className="containerContent">
+          
+            {componentsSwitch[selectedMenuItem]}
+         
         </Content>
         <Footer
-          style={{
-            textAlign: "center",
-          }}
+        className="footerDash"
         >
           BNA Viagem ©2022
         </Footer>

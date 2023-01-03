@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div>
       <NavBar />
-      <img src={ImgHeader} style={{ width: "100vw" }} />
+      <img src={ImgHeader} className="imgHeader" />
       <BuscaPassagem />
       <PromoHome />
       <HomeInternacional />

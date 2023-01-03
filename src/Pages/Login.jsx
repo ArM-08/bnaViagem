@@ -20,20 +20,10 @@ const Login = () => {
 
   return (
     <div
-      style={{
-        width: "70%",
-        margin: "0 auto",
-        display: "flex",
-        flexDirection: "column",
-      }}
+      className="loginContainer"
     >
       <Row
-        style={{
-          width: "100%",
-          margin: "20px",
-          display: "flex",
-          justifyContent: "center",
-        }}
+        className="logoRow"
       >
         <a href="/">
           <Image
@@ -44,16 +34,11 @@ const Login = () => {
           />
         </a>
       </Row>
-      <Row style={{ margin: "0 auto" }}>
+      <Row className="titleRow">
         <h1>Login </h1>
       </Row>
       <Row
-        style={{
-          width: "100%",
-          margin: "20px",
-          display: "flex",
-          justifyContent: "center",
-        }}
+      className="loginFormContainer"
       >
         <Form
           name="basic"
@@ -62,14 +47,14 @@ const Login = () => {
           onFinish={onFinish}
         >
           <Form.Item label="Email" name="email">
-            <Input style={{ width: "400px" }} />
+            <Input/>
           </Form.Item>
 
           <Form.Item label="Password" name="password">
-            <Input.Password style={{ width: "400px" }} />
+            <Input.Password/>
           </Form.Item>
           <Form.Item wrapperCol={{ offset: 10, span: 12 }}>
-            <Button style={{ margin: "1vh" }} type="primary" htmlType="submit">
+            <Button type="primary" htmlType="submit">
               Entrar
             </Button>
             <Button href="/cadastro" type="primary">

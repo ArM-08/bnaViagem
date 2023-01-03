@@ -4,20 +4,10 @@ import { Form, Image, Input, Button, Row } from "antd";
 const Cadastro = () => {
   return (
     <div
-      style={{
-        width: "70%",
-        margin: "0 auto",
-        display: "flex",
-        flexDirection: "column",
-      }}
+    className="cadastroContainer"
     >
       <Row
-        style={{
-          width: "100%",
-          margin: "20px",
-          display: "flex",
-          justifyContent: "center",
-        }}
+        className="logoContainer"
       >
         <a href="/">
           {" "}
@@ -33,25 +23,20 @@ const Cadastro = () => {
         <h1>Crie sua conta </h1>
       </Row>
       <Row
-        style={{
-          width: "100%",
-          margin: "20px",
-          display: "flex",
-          justifyContent: "center",
-        }}
+        className="formContainer"
       >
         <Form name="basic" labelCol={{ span: 5 }} wrapperCol={{ span: 26 }}>
           <Form.Item label="Nome" name="nome">
-            <Input style={{ width: "400px" }} />
+            <Input/>
           </Form.Item>
           <Form.Item label="Email" name="email">
-            <Input style={{ width: "400px" }} />
+            <Input/>
           </Form.Item>
           <Form.Item label="CPF" name="number">
-            <Input style={{ width: "400px" }} />
+            <Input  />
           </Form.Item>
           <Form.Item label="Password" name="password">
-            <Input.Password style={{ width: "400px" }} />
+            <Input.Password/>
           </Form.Item>
           <Form.Item wrapperCol={{ offset: 10, span: 12 }}>
             <Button style={{ margin: "1vh" }} type="primary" htmlType="submit">

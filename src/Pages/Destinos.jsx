@@ -10,19 +10,13 @@ const Destinos = () => {
   return (
     <div>
       <NavBar />
-      <img src={ImgHeader} style={{ width: "100vw" }} />
+      <img className="imgHeader" src={ImgHeader} />
       <BuscaPassagem />
-      <Row style={{ width: "70%", margin: "0 auto", marginBottom: "5vh" }}>
+      <Row className="destinosTitle">
         <h1>Destinos</h1>
       </Row>
       <Row
-        style={{
-          width: "70%",
-          justifyContent: "space-around",
-          gap: "2vh",
-          margin: "0 auto",
-          marginBottom: "5vh",
-        }}
+        className="containerCardDest"
       >
         {destino.map((destino) => (
           <div>
