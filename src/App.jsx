@@ -1,9 +1,7 @@
 import "antd/dist/reset.css";
 import { AuthProvider } from "./Context/AuthProvider";
-import "./index.css"
-
+import "./index.css";
 import { useState, useEffect } from "react";
-
 import { CartContext } from "./Context/CartContext";
 import destino from "./Components/BdDestinos/destino.json";
 import MainRoutes from "./Components/Routes";
@@ -12,7 +10,6 @@ function App() {
   const [carrinho, setCarrinho] = useState([]);
 
   const [quantidade, setQuantidade] = useState(0);
-
 
   const adicionaAoCarrinho = (destinoAAdicionar) => {
     const novoCarrinho = [...carrinho];
@@ -117,9 +114,9 @@ function App() {
   };
 
   return (
-    <CartContext.Provider value={context} >
+    <CartContext.Provider value={context}>
       <AuthProvider>
-        <MainRoutes/>
+        <MainRoutes />
       </AuthProvider>
     </CartContext.Provider>
   );
