@@ -11,17 +11,18 @@ Para instalar o projeto localmente, siga os seguintes passos:
 Clone o repositório em sua máquina:<br>
 git clone https://github.com/ArM-08/bnaViagem.git
 
-Navegue até a pasta do projeto e instale as dependências:
+Navegue até a pasta do projeto e instale as dependências:<br>
 cd bna-viagem
 npm install
 
-Inicie o servidor local:
+Inicie o servidor local:<br>
 npm run dev
 
-Acesse o projeto em seu navegador:
+Acesse o projeto em seu navegador:<br>
 
 http://localhost:3000/
-Funcionalidades:
+
+Funcionalidades:<br>
 
 mockapi para simular API de pesquisa de voos
 (https://63aeee1fcb0f90e51468adf3.mockapi.io/bna/flights)
@@ -31,11 +32,11 @@ Rio de Janeiro, São Paulo, Salvador, Brasilia
 LoginTeste: eve.holt@reqres.in
 senha: cityslicka
 
-Tecnologias utilizadas
-React: para construir a interface do usuário.
-Ant Design: para os componentes visuais.
-JavaScript: para a lógica de programação.
-Vercel: para hospedar o projeto na nuvem.
+Tecnologias utilizadas <br>
+React: para construir a interface do usuário.<br>
+Ant Design: para os componentes visuais.<br>
+JavaScript: para a lógica de programação.<br>
+Vercel: para hospedar o projeto na nuvem.<br>
 
 Licença
 Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE.md para mais detalhes.
