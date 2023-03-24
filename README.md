@@ -11,14 +11,14 @@ Para instalar o projeto localmente, siga os seguintes passos:
 Clone o repositório em sua máquina:<br>
 git clone https://github.com/ArM-08/bnaViagem.git
 
-Navegue até a pasta do projeto e instale as dependências:<br>
+Navegue até a pasta do projeto e instale as dependências:<br/>
 cd bna-viagem
 npm install
 
-Inicie o servidor local:<br>
+Inicie o servidor local:<br/>
 npm run dev
 
-Acesse o projeto em seu navegador:<br>
+Acesse o projeto em seu navegador:<br/>
 
 http://localhost:3000/
 
