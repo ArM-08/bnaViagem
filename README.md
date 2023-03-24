@@ -8,7 +8,7 @@ Este é um projeto web desenvolvido com React, JavaScript e Ant Design para ofer
 Instalação
 Para instalar o projeto localmente, siga os seguintes passos:
 
-Clone o repositório em sua máquina:
+Clone o repositório em sua máquina:<br>
 git clone https://github.com/ArM-08/bnaViagem.git
 
 Navegue até a pasta do projeto e instale as dependências:
